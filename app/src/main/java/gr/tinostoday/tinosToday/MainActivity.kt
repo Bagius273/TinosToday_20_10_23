@@ -42,6 +42,10 @@ class MainActivity : AppCompatActivity() {
             val tabTitle = customTabView.findViewById<TextView>(R.id.tab_title)
             tabTitle.text = tabTitles[i] // Set the correct tab title here
             tab?.customView = customTabView
+
+
+
+
         }
     }
 }
