@@ -3,6 +3,7 @@ package gr.tinostoday.tinosToday
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
@@ -27,26 +28,32 @@ class MainActivity : AppCompatActivity() {
         val pagerAdapter = MyPagerAdapter(supportFragmentManager)
 
         // Add WebViewFragment instances to the adapter
-        pagerAdapter.addFragment(fragment1(), "Αρχική")
-        pagerAdapter.addFragment(fragment2(), "Φαρμακείο")
-        pagerAdapter.addFragment(fragment3(), "Βενζινάδικο")
-        pagerAdapter.addFragment(fragment4(), "Διαφήμιση")
+        pagerAdapter.addFragment(fragment1(), "ΑΡΧΙΚΗ")
+        pagerAdapter.addFragment(fragment2(), "ΦΑΡΜΑΚΕΙΟ")
+        pagerAdapter.addFragment(fragment3(), "ΒΕΝΖΙΝΑΔΙΚΟ")
+        pagerAdapter.addFragment(fragment4(), "ΔΙΑΦΗΜΙΣΗ")
 
         viewPager.adapter = pagerAdapter
         tabLayout.setupWithViewPager(viewPager)
 
-        val tabTitles = arrayOf("Αρχική", "Φαρμακείο", "Βενζινάδικο", "Διαφήμιση")
+        val tabTitles = arrayOf("ΑΡΧΙΚΗ", "ΦΑΡΜΑΚΕΙΟ", "ΒΕΝΖΙΝΑΔΙΚΟ", "ΔΙΑΦΗΜΙΣΗ")
+        val tabIcons = arrayOf(
+            R.drawable.home_icon_black,  // Replace with the actual icon resource IDs
+            R.drawable.pharmacy___black,
+            R.drawable.gas_station_black,
+            R.drawable.pngegg_black
+        )
+
         for (i in 0 until tabLayout.tabCount) {
             val tab = tabLayout.getTabAt(i)
             val customTabView = layoutInflater.inflate(R.layout.custom_tab, null)
             val tabTitle = customTabView.findViewById<TextView>(R.id.tab_title)
-            tabTitle.text = tabTitles[i] // Set the correct tab title here
+            val tabIcon = customTabView.findViewById<ImageView>(R.id.tab_icon)
+
+            tabTitle.text = tabTitles[i]
+            tabIcon.setImageResource(tabIcons[i])
+
             tab?.customView = customTabView
-
-
-
-
         }
     }
 }
-

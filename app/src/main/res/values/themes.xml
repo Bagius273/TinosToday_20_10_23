@@ -1,13 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TinosToday" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">#2F72BC</item> <!-- Your primary color -->
-        <item name="colorPrimaryDark">#2F72BC</item> <!-- Desired status bar color -->
-        <item name="colorAccent">#2F72BC</item> <!-- Your accent color -->
+        <item name="colorPrimary">#000000</item> <!-- Your primary color -->
+        <item name="colorPrimaryDark">#000000</item> <!-- Desired status bar color -->
+        <item name="colorAccent">#FFFFFF</item> <!-- Your accent color -->
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="tabTextColor">@android:color/white</item>
     </style>
+
 
     <style name="Theme.TinosToday" parent="Base.Theme.TinosToday" />
 </resources>

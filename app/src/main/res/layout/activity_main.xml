@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#147ABD"
-    android:backgroundTint="#147ABD"
-    android:foregroundTint="#147ABD"
     tools:context=".MainActivity">
 
     <androidx.viewpager.widget.ViewPager
@@ -21,12 +18,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_gravity="bottom"
-            android:background="#147ABD"
+            android:background="#FFFFFF"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="0dp"
-            app:tabIndicatorColor="@color/tabSelectedColor"
-            app:tabSelectedTextColor="@color/tabSelectedColor"
-            app:tabTextColor="?attr/tabTextColor" />
+            app:tabIndicatorColor="@color/black"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white" />
     </androidx.viewpager.widget.ViewPager>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

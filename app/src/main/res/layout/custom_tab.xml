@@ -6,6 +6,13 @@
     android:orientation="vertical"
     android:gravity="center">
 
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"/>
+
     <TextView
         android:id="@+id/tab_title"
         android:singleLine="true"
@@ -13,8 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tab Title"
-        android:textColor="@color/tab_text_color_selector"
+        android:textColor="@color/black"
         android:textSize="11sp"
-        android:layout_marginTop="4dp"/>
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"/>
 
 </LinearLayout>

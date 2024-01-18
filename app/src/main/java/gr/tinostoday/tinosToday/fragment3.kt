@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Button
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.fragment.app.Fragment
 
 class fragment3 : Fragment() {
@@ -30,7 +31,7 @@ class fragment3 : Fragment() {
         // Load the constant URL when the fragment is created
         webView?.loadUrl(constantUrl)
 
-        val backButton = view.findViewById<Button>(R.id.backButton)
+        val backButton = view.findViewById<AppCompatImageView>(R.id.backButton)
         backButton.setOnClickListener {
             // Always load the constant URL when the back button is clicked
             webView?.loadUrl(constantUrl)
